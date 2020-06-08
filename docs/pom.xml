@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (c) 2011, 2019 Oracle and/or its affiliates. All rights reserved.
+    Copyright (c) 2011, 2020 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
     terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -15,15 +15,15 @@
 
     <groupId>jakarta.json.bind</groupId>
     <artifactId>jakarta.json.bind-docs</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>JSON Binding Docs</name>
 
     <properties>
         <asciidoctor.maven.plugin.version>1.6.0</asciidoctor.maven.plugin.version>
         <asciidoctorj.version>1.6.2</asciidoctorj.version>
-        <jruby.version>9.2.6.0</jruby.version>
-        <rubygems.prawn.version>2.0.2</rubygems.prawn.version>
+        <jruby.version>9.2.9.0</jruby.version>
+        <rubygems.prawn.version>2.2.2</rubygems.prawn.version>
     </properties>
 
     <repositories>

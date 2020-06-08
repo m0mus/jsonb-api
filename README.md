@@ -1,6 +1,9 @@
 # Jakarta JSON Binding (JSON-B)
 
-[![Maven Central](https://img.shields.io/maven-central/v/jakarta.json.bind/jakarta.json.bind-api.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:jakarta.json.bind%20a:jakarta.json.bind-api)
+[![Maven Central](https://img.shields.io/maven-central/v/jakarta.json.bind/jakarta.json.bind-api.svg?label=Maven%20Central)](https://mvnrepository.com/artifact/jakarta.json.bind/jakarta.json.bind-api)
+[![Javadoc](https://javadoc.io/badge2/jakarta.json.bind/jakarta.json.bind-api/javadoc.io.svg)](https://javadoc.io/doc/jakarta.json.bind/jakarta.json.bind-api)
+[![Snapshots](https://img.shields.io/nexus/s/https/oss.sonatype.org/jakarta.json.bind/jakarta.json.bind-api.svg?label=Snapshots)](https://oss.sonatype.org/content/repositories/snapshots/jakarta/json/bind/jakarta.json.bind-api/)
+[![Gitter](https://badges.gitter.im/eclipse/jsonb.svg)](https://gitter.im/eclipse/jsonb)
 [![License](https://img.shields.io/badge/License-EPL%202.0-green.svg)](https://opensource.org/licenses/EPL-2.0)
 
 JSON-B is a standard binding layer for converting Java objects to/from JSON messages. It defines a default mapping algorithm for converting existing Java classes to JSON, while enabling developers to customize the mapping process through the use of Java annotations.
@@ -49,10 +52,16 @@ String aliceJson = "{\"id\":5678,\"name\":\"Alice\",\"age\":42}";
 User alice = jsonb.fromJson(aliceJson, User.class);
 ```
 
+## How to run the TCK tests
+
+The JSON-B TCK tests are produced as a Maven artifact where the tests use Arquillian + JUnit. To run the TCK tests using your implementation,
+include the TCK module and apply the appropriate Arquillian container. See the [Eclipse Yasson](https://github.com/eclipse-ee4j/yasson) repository for an example of this.
+
 ## Links
 
 - [Official web site](https://eclipse-ee4j.github.io/jsonb-api)
 - [Eclipse project](https://projects.eclipse.org/projects/ee4j.jsonb)
 - [User's Guide](http://json-b.net/docs/user-guide.html)
-- [Mailing list](jsonb-dev@eclipse.org)
+- [Jenkins Builds](https://ci.eclipse.org/jsonb/view/all/)
+- [Mailing list](https://www.eclipse.org/lists/jsonb-dev/)
 - [Yasson (Compatible Implementation)](https://github.com/eclipse-ee4j/yasson)
